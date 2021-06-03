@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>COSMOS - WALLPAPERS</title>
+</head>
+<style>
+    /*-----------Scroll Bar--------  */
+    /* ::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        border: 7px solid darkslateblue;
+        box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0);
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background: linear-gradient(45deg, #06dee1, #79ff6c);
+        border-radius: 1rem;
+    } */
+    /*------x---------Scroll Bar----x------ */
+    
+    body {
+        background-color: #151515;
+    }
+    
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+    }
+    
+    header {
+        background-color: #151515;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: background-color .5s ease;
+        z-index: 1000;
+        border-bottom: 3px solid white;
+    }
+    
+    .container1 {
+        padding: 0;
+        background-color: #151515;
+        margin-left: auto;
+        margin-right: 9rem;
+    }
+    
+    .nava {
+        width: 100%;
+        height: 9rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid rgba(255, 255, 255, .05);
+        transition: height .5s ease;
+    }
+    
+    .nava a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    
+    .nava-list {
+        list-style: none;
+        display: flex;
+        margin-right: auto;
+        margin-left: 4rem;
+    }
+    
+    .nava-link {
+        margin: 0 2rem;
+        position: relative;
+    }
+    
+    .nava-link::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .5s ease-in-out;
+    }
+    
+    .nava-link:hover::after {
+        transform: scaleX(1);
+    }
+    /*Apply styles after scroll*/
+    
+    .scrolling-active {
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+    }
+    
+    .scrolling-active .nava {
+        height: 6.6rem;
+    }
+    
+    .scrolling-active .nava a {
+        color: white;
+    }
+    
+    .scrolling-active .search-opt {
+        height: 53px;
+        top: 33px;
+    }
+    
+    .scrolling-active .search-btn {
+        height: 30px;
+    }
+    
+    .scrolling-active .nava-link::after {
+        background-color: white;
+    }
+    /*Apply styles after scroll end*/
+    
+    .divider-symbol {
+        display: inline-block;
+        width: 2px;
+        height: 29px;
+        background-color: white;
+        margin: -6px 0;
+    }
+    /* Hero Demo Content*/
+    
+    .demo-content {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    /* Hero end*/
+    
+    .search-opt::after {
+        position: fixed;
+    }
+    
+    .search-opt {
+        left: 50%;
+        background: #ffffff;
+        height: 53px;
+        border-radius: 5px;
+        padding: 10px;
+        top: 47px;
+        transition-delay: .1s;
+        transform: translate(-50%, -50%);
+        position: fixed;
+    }
+    
+    .search-btn {
+        position: relative;
+        float: right;
+        width: 40px;
+        height: 35px;
+        border-radius: 10%;
+        background: #151515;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: 0.4s;
+    }
+    
+    .search-opt:hover>#searchin-opt {
+        width: 240px;
+        padding: 0px 6px;
+    }
+    
+    .search-opt:hover>.search-btn {
+        background: white;
+        color: #151515;
+    }
+    
+    #searchin-opt {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0px;
+        font-size: 16px;
+        color: black;
+        font-weight: 600;
+        transition: 0.4s;
+        line-height: 40px;
+        width: 0px;
+    }
+    /*--------------------Hero Demo Content-----------------------*/
+    
+    .logo {
+        width: 100%;
+        height: 100vh;
+        background-image: url("logo.png");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .logo::after {
+        content: '';
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    /* pop up */
+    /* Center the image and position
+the close button */
+    
+    .imgcontainer {
+        width: 70%;
+        height: 690px;
+        margin: 0px 22rem;
+        margin-top: -3rem;
+        margin-bottom: 1rem;
+        /* box-shadow: -1rem -1rem 1rem -1rem black; */
+        box-shadow: 0px 1px 15px rgba(52, 48, 48, 0.3);
+        overflow: auto;
+        border-radius: 1rem;
+        background-color: white;
+    }
+    
+    .imgcontainer img {
+        /* margin: 158px 365px; */
+        height: 500px;
+        width: 800px;
+        margin-top: 3rem;
+        border-radius: 1rem;
+        margin-left: 13rem;
+    }
+    
+    .container {
+        padding: 16px;
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: -16px;
+        width: 100%;
+        height: 102%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
+    }
+    
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+    
+    .fd {
+        background-color: white;
+        display: block;
+        color: green;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: none;
+        font-weight: 700;
+        border-radius: 1rem;
+        padding: 10px;
+        margin-top: 2rem;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+        box-sizing: border-box;
+        width: 20%;
+        margin-left: 13rem;
+        border: 2px solid green;
+        text-decoration: none;
+    }
+    
+    .fd:hover {
+        color: white;
+        background: green;
+    }
+    
+    .sh {
+        background-color: white;
+        display: block;
+        color: green;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: none;
+        font-weight: 700;
+        border-radius: 1rem;
+        padding: 10px;
+        float: right;
+        margin-right: 13rem;
+        margin-top: -5rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+        box-sizing: border-box;
+        width: 20%;
+        border: 2px solid green;
+    }
+    
+    .sh:hover {
+        color: white;
+        background: green;
+    }
+    
+    .pad-2 {
+        padding: 6px;
+    }
+    /* Add Zoom Animation */
+    
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+    
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+    
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
+    }
+    /* Change styles for span and cancel
+button on extra small screens */
+    
+    @media screen and(max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+    }
+    
+    .hd {
+        /* margin: 2rem; */
+        font-size: 6rem;
+    }
+    
+    .hov {
+        transition: .5s ease-in-out;
+    }
+    
+    .hov:hover {
+        transform: scale(1.2);
+        z-index: 1000;
+    }
+    /* ----------------Footer Section------------------ */
+    
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+    footer {
+        /* position: fixed; */
+        top: 3rem;
+        bottom: 0px;
+        width: 100%;
+        margin-left: 0px;
+        color: white;
+        font-size: 14px;
+    }
+    
+    .main-content {
+        display: flex;
+    }
+    
+    .main-content .box {
+        flex-basis: 50%;
+        padding: 10px 20px;
+    }
+    
+    .box h2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    .box .content {
+        margin: 20px 0 0 0;
+        position: relative;
+    }
+    
+    .box .content:before {
+        position: absolute;
+        content: "";
+        top: -10px;
+        height: 2px;
+        width: 100%;
+        background: #1a1a1a;
+    }
+    
+    .box .content:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 15%;
+        background: #fff;
+        top: -10px;
+    }
+    
+    .left .content p {
+        text-align: justify;
+    }
+    
+    .left .content .social {
+        margin: 20px 0 0 0;
+    }
+    
+    .left .content .social a {
+        padding: 0 2px;
+    }
+    
+    .left .content .social a span {
+        height: 40px;
+        width: 40px;
+        background: #1a1a1a;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    
+    .left .content .social a span:hover {
+        background: #fff;
+    }
+    
+    .center .content .fas {
+        font-size: 1.4375rem;
+        background: #1a1a1a;
+        height: 45px;
+        width: 45px;
+        line-height: 45px;
+        text-align: center;
+        border-radius: 50%;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    /* .center .content .fas:hover { */
+    /* background: #fff; */
+    /* } */
+    
+    .center .content .text {
+        font-size: 1.0625rem;
+        font-weight: 500;
+        padding-left: 10px;
+    }
+    
+    .center .content .phonea {
+        margin: 15px 0;
+    }
+    
+    .right form .text {
+        font-size: 1.0625rem;
+        margin-bottom: 2px;
+        color: #656565;
+    }
+    
+    .right form .msg {
+        margin-top: 10px;
+    }
+    
+    .right form input,
+    .right form .msgForm {
+        width: 100%;
+        font-size: 1.0625rem;
+        background: #151515;
+        padding-left: 10px;
+        border: 1px solid #222222;
+    }
+    
+    .right form input:focus,
+    .right form .msgForm:focus {
+        outline-color: #3498db;
+    }
+    
+    .right form input {
+        height: 35px;
+    }
+    
+    .right form .btna {
+        margin-top: 10px;
+    }
+    
+    .right form .btna button {
+        height: 40px;
+        width: 100%;
+        border: none;
+        outline: none;
+        background: #fff;
+        font-size: 1.0625rem;
+        font-weight: 500;
+        cursor: pointer;
+        color: black;
+        transition: .3s;
+        font-size: 16px;
+    }
+    /* .right form .btna button:hover {
+        /* background: #000; */
+    /* color: white;
+        font-size: 20px; */
+    /* } */
+    
+    */ .bottom center {
+        padding: 5px;
+        font-size: 0.9375rem;
+        background: #151515;
+    }
+    
+    .bottom center span {
+        color: #656565;
+    }
+    
+    .bottom center a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .bottom center a:hover {
+        text-decoration: underline;
+    }
+    
+    @media screen and (max-width: 900px) {
+        footer {
+            position: relative;
+            bottom: 0px;
+        }
+        .main-content {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .main-content .box {
+            margin: 5px 0;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="container1">
+            <nav class="nava">
+
+                <ul class="nava-list">
+                    <li>
+                        <a href="cosmosmainpage.html" class="nava-link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nava-link">ABOUT</a>
+                    </li>
+
+
+
+                </ul>
+                <div id="searchbar-opt" class="search-opt">
+                    <input type="search" id="searchin-opt" name="s" placeholder="  Search..." aria-label="search through the site content">
+                    <a class="search-btn" href="#"><i class="fa fa-search only-for-search-icon" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="nava-link">LOGIN</a>
+                    <div class="divider-symbol"></div>
+                    <a href="#" class="nava-link">SIGN UP</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="logo"></section>
+    <section class="demo-content">
+        <div class="hd text-center">Type of wallpapers</div>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                            <img src="nebula.jpg" onclick="document.
+                            getElementById('id01')
+                            
+                            .style.display='block'" width="100%" height="225" alt="nebula" class="bd-placeholder-img card-img-top hov">
+                            <div id="id01" class="modal" action="action_page.php">
+
+
+
+                                <div class="imgcontainer">
+                                    <span onclick="document
+                                        .getElementById('id01')
+                                        
+                                        .style.display='none'" class="close" title="Close Modal">
+                                        &times;</span>
+
+                                    <a class="fd"><i class="pad-2 fa fa-download" aria-hidden="true"></i>FREE
+                                        DOWNLOAD</a> <a href="#" class="sh"><i class="pad-2 fa fa-share-alt"
+                                            aria-hidden="true"></i>SHARE</a>
+
+
+                                    <img src="nebula.jpg" alt="Nebuka">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                            <img src="nebula.jpg" width="100%" height="225" alt="nebula" class="bd-placeholder-img card-img-top hov">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="main-content mx-4">
+            <div class="left box">
+                <h2>
+                    About us</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex veritatis libero alias veniam odio, doloribus eius eaque ut dolor harum architecto possimus numquam ea animi expedita blanditiis ipsum. Neque, mollitia voluptatem unde sequi
+                        ratione voluptas accusantium. Suscipit aspernatur necessitatibus itaque. Amet eligendi deserunt exercitationem ad!</p>
+                    <div class="social">
+                        <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+                        <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>
+                    Address</h2>
+                <div class="content">
+                    <div class="placea">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">address</span>
+                    </div>
+                    <div class="phonea">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">mobile number</span>
+                    </div>
+                    <div class="emaila">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">abc@example.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>
+                    Support us</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, eligendi eaque voluptates doloribus similique officia?</p>
+                    <form action="#">
+
+
+                        <br />
+                        <div class="btna">
+                            <button type="submit">Donate</button>
+                        </div>
+
+                        <!-- </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--------x--------Footer Section----------x-------->
+
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })
+    </script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+        // Get the modal 
+
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

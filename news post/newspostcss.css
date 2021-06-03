@@ -1,0 +1,334 @@
+/* body background */
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(6, 6, 54, 1) 36%, rgba(0, 212, 255, 1) 100%);
+    
+    
+    margin: 0px;
+    padding: 0%;
+    position: relative;
+}
+
+/* navigation bar starts */
+#navbar-opt {
+    display: flex;
+    align-items: center;
+}
+
+/* logo designing */
+#logo-opt {
+    margin: 6px 4px;
+}
+
+#logo-opt img {
+    height: 100px;
+}
+
+.search-opt {
+    left: 80%;
+    background: #ffffff;
+    height: 35px;
+    border-radius: 35px;
+    padding: 10px;
+    top: 4rem;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.search-btn {
+    position: relative;
+    float: right;
+    color: #e84118;
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.search-opt:hover>#searchin-opt {
+    width: 240px;
+    padding: 0px 6px;
+}
+
+.search-opt:hover>.search-btn {
+    background: white;
+}
+
+#searchin-opt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+/* next line navigation bar styling starts here  */
+#navbar2-opt {
+    display: flex;
+    border-bottom: 3px solid white;
+}
+
+#navbar2-left-opt ul {
+    display: flex;
+}
+
+#navbar2-left-opt ul li {
+
+    list-style: none;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+#navbar2-left-opt ul li a {
+    display: block;
+    color: white;
+    list-style: none;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 3px 20px;
+}
+
+/* highlighting of menu side bar is below  */
+#navbar2-left-opt ul li a:hover {
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    background-size: auto;
+    box-sizing: border-box;
+}
+
+.class-navbar {
+    margin-left: 48px;
+}
+
+/* This is for tooltip Container */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+
+/* This is for tooltip text */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 85px;
+    /* background-color:black; */
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 78%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    font-size: 12px;
+}
+
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(26, 38, 151) transparent;
+}
+
+/* Show the tooltip text when you
+mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* login sign up css is here  */
+#navbar2-right-opt ul {
+    display: flex;
+    margin-left: 530px;
+}
+
+#navbar2-right-opt ul li {
+    list-style: none;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    margin: 0%;
+}
+
+#navbar2-right-opt ul li a {
+    display: block;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 22px;
+    margin-left: 12px;
+}
+
+/* highlighting of menu side bar is below  */
+#navbar2-right-opt ul li a:hover {
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    background-size: cover;
+}
+
+#login-opt-navbar {
+    border-right: 2px solid white;
+    box-sizing: content-box;
+    padding-right: 28px;
+    margin-right: -29px;
+    text-align: center;
+}
+
+#signup-opt-navbar {
+    display: block;
+    padding: 0px;
+}
+
+/* navbar work ends here  */
+
+/* blog full page starts here */
+#article {
+    padding: 2rem;
+    position: relative;
+    
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: visible;
+}
+                        #article .container {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            justify-content: center;
+                            align-items: center;
+                            height: 50vh;
+                        }
+
+.btn-primary {
+    background: var(--light-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem;
+    border: none;
+    background: var(--dark-color);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.4;
+}
+
+
+.categories {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: var(--dark-color);
+    color: black;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-block {
+    display: block;
+    widows: 100%;
+    text-align: center;
+    padding: 1rem;
+    border: .5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.card {
+    background: #fff;
+    padding: 2rem;
+}
+
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-dark {
+    background: var(--dark-color);
+    color: black;
+}
+
+.list li {
+    padding: .5 0;
+    border-bottom: #555 dotted 1px;
+    width: 90%;
+
+}
+
+.list li a:hover {
+    color: var(--primary-color) !important;
+}
+
+.page-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 2rem 0;
+    grid-gap: 1.5rem;
+}
+
+.page-container>*:first-child {
+    grid-row: 1/span 3;
+}
+
+.l-heading {
+    font-size: 3rem;
+}
+ .card img{
+     width: 100%;
+ }

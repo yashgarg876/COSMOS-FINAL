@@ -1,0 +1,556 @@
+/* scroll bar is here  */
+::-webkit-scrollbar{
+    width: 25px;
+}
+::-webkit-scrollbar-track{
+ border: 7px solid darkslateblue;
+ box-shadow: inset 0 0 2.5px 2px rgba(0, 0,0, 0);   
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        45deg,
+       #06dee1,
+       #79ff6c);
+    border-radius: 1rem;
+}
+/* body background */
+body{
+    background-image:url('background.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0%;
+    position: relative;
+}
+/* navigation bar starts */
+#navbar-opt{
+    display: flex;
+    align-items: center;
+}
+
+/* logo designing */
+#logo-opt{
+    margin: 6px 4px;
+}
+#logo-opt img{
+    height: 100px;
+}
+.search-opt{
+    left:80%;
+    background: #ffffff;
+    height: 35px;
+    border-radius: 35px;
+    padding: 10px;
+    top: 4rem;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.search-btn{
+    position: relative;
+    float: right;
+    color: #e84118;
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.search-opt:hover>#searchin-opt{
+    width: 240px;
+    padding: 0px 6px;
+}
+.search-opt:hover>.search-btn{
+    background: white;
+}
+#searchin-opt{  
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+/* next line navigation bar styling starts here  */
+#navbar2-opt{
+    display: flex;
+    border-bottom: 3px solid white;
+}
+#navbar2-left-opt ul{
+    display: flex;
+}
+#navbar2-left-opt ul li{
+ 
+    list-style: none;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+#navbar2-left-opt ul li a{
+    display: block;
+    color: white;
+    list-style: none;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 3px 20px; 
+}
+
+/* highlighting of menu side bar is below  */
+#navbar2-left-opt ul li a:hover{
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    background-size: auto;
+    box-sizing: border-box;   
+}
+.class-navbar{
+    margin-left: 48px;
+}
+/* This is for tooltip Container */ 
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+
+/* This is for tooltip text */ 
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 85px;
+    /* background-color:black; */
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 78%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    font-size: 12px;
+}
+
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(26, 38, 151) transparent;
+}
+
+/* Show the tooltip text when you
+mouse over the tooltip container */ 
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+/* login sign up css is here  */
+#navbar2-right-opt ul{
+    display: flex;
+    margin-left: 530px;   
+}
+#navbar2-right-opt ul li{     
+    list-style: none;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;        
+    margin: 0%;       
+}
+#navbar2-right-opt ul li a{
+    display: block;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 22px;  
+    margin: 0px 9px;
+    
+}
+
+
+#login-opt-navbar{
+   
+    border-right: 2px solid white;
+    box-sizing:border-box;
+    padding-right: 28px;
+    margin-right: -29px;
+    text-align: center;
+}
+#signup-opt-navbar{
+    display: block;
+    padding: 0px; 
+    
+}
+/* highlighting of menu side bar is below */
+#navbar2-right-opt ul li a:hover{ 
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    background-size: cover;
+}
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+button.submit-opt{
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 3px solid #fff;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6rem;
+    background-image: linear-gradient(45deg,#00dbde, #fc00ff);
+    font-family: "Arial Black", "Arial Bold", sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;  
+}
+button.submit-opt:hover{
+    color: #000; 
+    border: 3px solid black;
+}
+button.cancel-opt {
+    width: 7rem;
+    padding: 10px 18px;
+    border-radius:  5rem; 
+    border: 2px solid #fff;
+    color: #fff;
+    background-image: linear-gradient(45deg,#7b4397,#dc2430);
+    font-family: "Arial Black", "Arial Bold", sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;        
+}
+button.cancel-opt:hover,form a.forget-password:hover{
+    color: black;   
+    border: 2px solid black;
+}
+
+/* Center the image and position
+the close button */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 7%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+form a.forget-password{
+    border-radius: 6rem; 
+    border: 2px solid white;
+    background-image: linear-gradient(45deg,#7b4397,#dc2430);
+    font-family: "Arial Black", "Arial Bold", sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;        
+    text-align: center;
+    padding: 1rem;
+    float: right;
+}
+/* making social media links */
+form .links-section-login-popup{
+    background-color: #1c87e4;
+    background-size: cover;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px
+}
+h4{
+    text-align: center;
+}
+.icons-login-popup i{
+   margin-left: 110px ;
+   padding: 0px 1rem;
+   size: 1rem;
+}
+.icons-login-popup i:hover{
+    color: #000;
+    background-color: white;
+  
+ }
+.written-login-popup{
+    padding: 1rem;
+    text-align: center;
+}
+/* The Modal (background) */
+
+.modal {
+    display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   margin-left: 16rem;
+   width: 66%;
+   height: 95%;
+   overflow: auto;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+   padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+/* making social network account login */
+
+
+/* Add Zoom Animation */ 
+
+.animate {
+ -webkit-animation: animatezoom 0.6s;
+ animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+ from {-webkit-transform: scale(0)}
+ to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel
+button on extra small screens */ 
+
+@media screen and(max-width: 300px){
+    form a.forget-password{
+        display: block;
+        float: none;
+     }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+/* navbar work ends here  */
+
+/* main option css starts  here  */
+.opt-main{
+    color: white;
+    border: 3px solid white;
+    border-radius: 1rem;
+    font-family: 'Bangers', cursive; font-size: 44px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    text-decoration: none;
+    text-align: center; 
+    margin: 2%;
+}
+#main-opt-items{
+    margin-top: 50px;
+    margin-left: 3.9rem;
+    display: grid;
+    grid-template-columns:24% 24% 24% 24% ;    
+}
+#space-blogs-opt-main, #wallpapers-opt-main, #research-opt-main, #profile-opt-main{
+    padding: 100px 0px;
+}
+/* main option css ends here and next trending option starts here  */
+
+.trending-section-opt{
+    display: block;
+    color: white;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    font-family: 'Secular One', sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;   
+    padding-left: 2rem;
+    margin-top: 3rem;
+    box-sizing: content-box;
+    margin-left: 10px;
+    margin-right: 82rem;
+}
+#trending-opt{
+    text-decoration: none;
+} 
+.trending-section-opt:hover{ /*this is hover section for blogs heading in last if you dont want it then make it comment dont delete it */
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    margin-right: 84rem;
+ }
+#trending-scroll-opt{
+    display: block;
+    border: 3px solid white;
+    border-radius: 1rem;
+    padding-top: 20rem;
+    margin-left: 4.4rem;
+    margin-top: 3rem;
+    margin-right: 4rem;
+    text-decoration: none;
+}
+/* trending option css ends here and next section will start */
+#blog_opt_section{
+    display: block;
+    color: white;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    font-family: 'Secular One', sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;   
+    padding-left: 2rem;
+    margin-top: 3rem;
+    box-sizing: content-box;
+    margin-left: 10px;
+    text-decoration: none;
+    margin-right: 86rem;
+}
+ #blog_opt_section:hover{ /*this is hover section for blogs heading in last if you dont want it then make it comment dont delete it */
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+}
+/* blogs boxes css is here  */
+
+#section-opt-in-second-last-line1 ul{
+    display: grid;
+    grid-template-columns: 25% 46.5% 25%;
+    margin-left: 1.2rem;
+    list-style: none;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+#section-opt-in-second-last-line1 ul li{
+    color: white;
+    list-style: none;
+    border-radius: 30px;
+    border: 3px solid white;
+    margin: 3%;
+    height: 19rem;
+    margin-top: 2rem;text-align: center;
+}
+#section-opt-in-second-last-line1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* next line css starts from here  */
+#section-opt-in-second-last-line2{
+    list-style: none;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    text-align: center;
+    list-style: none;
+    border-radius: 30px;
+    border: 3px solid white;
+    height: 19rem;
+    width: 41.5%;
+    margin-left: 27.8rem;
+}
+#section-opt-in-second-last-line2 a{
+    color: white;
+    text-decoration: none;
+}
+
+/* second last section css ends here and the next last line css starts from here  */
+#last_section_opt{
+    border-top: 3px solid white;
+    margin-top: 3rem;
+}
+#last-section-writing-opt{
+    text-align: center;
+    color: #fff;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+#last-section-spacing{
+    display: flex;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+#last-section-left-opt{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 3rem;
+}   
+#last-section-left-opt li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-top: 10px;
+    text-align: center;
+    height: 32px;
+    width: 13rem;
+    box-sizing: border-box;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+#last-section-left-opt li a:hover{
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+}
+/* right options starts from here  */
+#last-section-right-opt{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 3rem;
+    display: block;
+    position: relative;
+}
+#last-section-right-opt li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-top: 10px;
+    text-align: center;
+    height: 32px;
+    width: 13rem;
+    box-sizing: border-box;
+    margin-left: 59rem; 
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+#last-section-right-opt li a:hover{
+    color: black;
+    background-color: white;
+    border: 3px solid black;  
+}
+/* home page ends here now rest  */
+
+
+
+
+ 
+

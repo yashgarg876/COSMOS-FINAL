@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSMOS</title>
+    <link rel="stylesheet" href="cosmos-page-css.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- logo with search bar upper header starts here/ -->
+    <nav id="navbar-opt">
+        <div id="logo-opt">
+            <img src="logo.png" alt="COSMOS">
+        </div>
+        <div id="searchbar-opt" class="search-opt">
+            <input type="search" id="searchin-opt" name="s" placeholder="  Search..."
+                aria-label="search through the site content">
+            <a class="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </div>
+        <!-- logo with seacrh bar ends here -->
+
+        <!-- next line navigation bar starts here -->
+    </nav>
+    <nav id="navbar2-opt">
+        <div id="navbar2-left-opt">
+            <ul>
+
+                <li>
+                    <a href="#" class="class-navbar"><span id="home-opt-navbar">
+                            <div class="tooltip">Home
+                                <span class="tooltiptext">
+                                    You are here
+                                </span>
+                            </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="class-navbar">
+                        <span id="about-opt-navbar">
+                            About
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="class-navbar">
+                        <span id="contact-opt-navbar">
+                            Contact Us
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- login sign up option starts here  -->
+        <div id="navbar2-right-opt">
+            <ul>
+                <li>
+                    <a id="login-opt-navbar" onclick="document.
+                    getElementById('id01')
+                    
+                    .style.display='block'">Login
+                    </a>
+
+                    <div id="id01" class="modal">
+
+                        <form class="modal-content animate" action="action_page.php">
+                            <div class="imgcontainer">
+                                <span onclick="document
+                    .getElementById('id01')
+                    
+                    .style.display='none'" class="close" title="Close Modal">
+                                    &times;</span>
+
+                                <img src="img_profile.png" alt="Avatar" class="avatar">
+                            </div>
+
+
+                            <div class="container">
+                                <label><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username..." name="uname" required>
+
+
+                                <label><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password..." name="psw" required>
+
+
+                                <button class="submit-opt" type="submit">Login</button>
+                                <input type="checkbox" checked="checked">
+                                Remember me
+                            </div>
+
+
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button class="cancel-opt" type="button" onclick="document.getElementById
+                     ('id01').style.
+                    
+                     display='none'">
+                                    Cancel</button>
+
+                                <a href="#" class="forget-password">Forget Password?</a>
+                                <!-- <div class="icon-sm">
+                <li> <a class="google-icon">
+                    <i  class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+
+                </li>
+                <li>
+                    <img src="twitter-icon.png" alt="Twitter" class="twitter-icon">
+                </li>
+                <li>
+                    <img src="facebook-icon.png" alt="Facebook" class="facebook-icon">
+                </li>
+        </div> -->
+        <div class="links-section-login-popup">
+            <h4>Login with : </h4>
+            <a href="" class="icons-login-popup">
+                <i class="fa fa-google-plus" aria-hidden="true"><span class="written-login-popup">GOOGLE</span> </i>
+                <i class="fa fa-twitter" aria-hidden="true"><span class="written-login-popup">TWITTER</span></i>
+                <i class="fa fa-linkedin" aria-hidden="true"><span  class="written-login-popup">LINKED-IN</span></i>
+                <i class="fa fa-facebook-official" aria-hidden="true"><span class="written-login-popup">FACEBOOK</span></i>
+        </a>
+        </div>
+
+        </div>
+        </form>
+        </div>
+
+        </li>
+        <li>
+            <a class="class-navbar2" href="#">
+                <span id="signup-opt-navbar">
+                    Sign Up
+                </span>
+            </a>
+        </li>
+        </ul>
+        </div>
+
+    </nav>
+    <!-- total all navigation bar ends  -->
+
+    <!-- next content will start from here  -->
+    <div id="main-opt-items">
+        <a href="#" id="space-blogs-opt-main" class="opt-main">
+            <span>
+                SPACE-BLOGS
+            </span>
+        </a>
+        <a href="#" id="wallpapers-opt-main" class="opt-main">
+            <span>
+                WALLPAPERS
+            </span>
+        </a>
+        <a href="#" id="research-opt-main" class="opt-main">
+            <span>
+                RESEARCHES
+            </span>
+        </a>
+        <a href="#" id="profile-opt-main" class="opt-main">
+            <span>
+                PROFILE
+            </span>
+        </a>
+    </div>
+    <!-- main options end here  -->
+
+    <!-- next trending option line starts from here  -->
+    <div>
+        <a href="#" id="trending-opt" class="trending-section-opt">
+            <span>
+                TRENDING...
+            </span>
+        </a>
+    </div>
+    <!-- trending section box is here  -->
+    <div>
+        <a href="#" id="trending-scroll-opt">
+            <!-- is line me trending ka content dalega  color white de dena to aajayega anchor tag bhi diya h baad me chahe to hata denge-->
+        </a>
+    </div>
+
+    <!-- this trending section ends here and the next blog section will start in next line -->
+    <div>
+        <a href="" id="blog_opt_section">
+            <span>
+                BLOGS...
+            </span>
+        </a>
+    </div>
+    <!-- section blocks will start here  -->
+    <div id="section-opt-in-second-last-line1" class="section-opt-infinite-scroll"> -->
+        <ul>
+            <li>
+                <a href="#" id="block1-opt">
+                    <span>
+                        v
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="block2-opt">
+                    <span>
+                        d
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="block3-opt">
+                    <span>
+                        c
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="section-opt-in-second-last-line2">
+        <a href="#">
+            <span>
+                c
+            </span>
+        </a>
+    </div>
+
+    <!-- blog section ends here and now the last section of twitter and fb links will start -->
+    <div id="last_section_opt">
+        <!-- kuch likhna ho wagarh wagarh to yaha lih dena -->
+        <div id="last-section-writing-opt">
+            For your ease
+        </div>
+        <!-- yaha bblock bna dera hu chaaho to kuch add kr dena vrna hata dena options k liye h  -->
+        <div id="last-section-spacing">
+            <div id="last-section-left-opt">
+                <li>
+                    <a href="#">
+                        abcd
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        abcd
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        abcd
+                    </a>
+                </li>
+            </div>
+            <div id="last-section-right-opt">
+                <li>
+                    <a href="#">
+                        basc
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        axss
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        // Get the modal 
+
+        var modal = document.getElementById
+            ('id01');
+
+        // When the user clicks anywhere
+        outside of the modal, close it
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

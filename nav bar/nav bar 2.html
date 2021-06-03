@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" type="text/css" href="../nav bar/nav bar 2 css.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="logo.png" alt="COSMOS"></li>
+            <li class="items"><a href="#">Home</a></li>
+            <li class="items"><a href="#">About</a></li>
+            <li class="items"><a href="#">Contact</a></li>
+            <li class="items"><a href="#">Login/Sign Up</a></li>
+            
+            <li class="items"><a href="#">Search here</a></li>
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <script>
+        $(document).ready(function () {
+            $('.btn').click(function () {
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
+</body>
+
+</html>

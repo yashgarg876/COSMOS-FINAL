@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+
+<body>
+    <p id="output">Default text</p>
+    <input type="text" id="city">
+    <button onclick="show_temp()">Submit</button>
+    <script type="text/javascript">
+        function show_temp() {
+            document.getElementById("output").style.color = "red";
+            document.getElementById("output").style.fontSize = "20px";
+            city = document.getElementById("city").value;
+
+            httpRequest = new XMLHttpRequest();
+            url = "https://api.weatherbit.io/v2.0/subscription/usage?key=city" + city + "5658943c9df64823be1443ab432fe932	"
+        }
+    </script>
+
+
+
+</body>
+
+</html>
