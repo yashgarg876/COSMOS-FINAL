@@ -1,0 +1,3 @@
+# COSMOS-FINAL
+
+This is a project website i have been working on.The primary goal of this website is to provide information about space that is widely spread across the internet and bring it under one roof. The main feature is that we are providing an interactive user experience. It will provide users, a friendly and secure environment for posting their thoughts, doubts, have discussions, reading and sharing the news, and searching across clean and radiant wallpapers for a customized user experience. We are building a 3D map of space that will provide information about celestial bodies in a 3D model, allowing users, to explore the universe by a 3D visualization software illustrating complex logical processes and identify things more easily.
